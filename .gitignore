@@ -2,5 +2,7 @@ BlazorTestWebApp/BlazorServer/bin/*
 BlazorTestWebApp/BlazorServer/obj/*
 BlazorTestWebApp/BlazorServer/Properties/*
 BlazorTestWebApp/.vs/
+BlazorTestWebApp/EmployeeManagement.Models/bin/*
+BlazorTestWebApp/EmployeeManagement.Models/obj/*
 BlazorTestWebApp/PythonFlaskAPIForBlazorCln/obj/*
 BlazorTestWebApp/PythonFlaskAPIForBlazorCln/PythonFlaskAPIForBlazorCln/__pycache__/*
