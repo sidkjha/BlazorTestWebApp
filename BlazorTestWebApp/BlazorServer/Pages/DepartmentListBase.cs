@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace BlazorServer.Pages
 {
-    public class EmployeeListBase : ComponentBase
+    public class DepartmentListBase : ComponentBase
     {
         [Inject]
-        public IEmployeeService EmployeeService { get; set; }
-        public IEnumerable<Employee> Employees { get; set; }
+        public IDepartmentService DepartmentService { get; set; }
+        public IEnumerable<Department> Departments { get; set; }
         protected override async Task OnInitializedAsync()
         {
-            Employees = (await EmployeeService.GetEmployees()).ToList();
-        }        
+            Departments = (await DepartmentService.GetDepartments()).ToList();
+        }
     }
 }
