@@ -1,8 +1,11 @@
 BlazorTestWebApp/BlazorServer/bin/*
 BlazorTestWebApp/BlazorServer/obj/*
 BlazorTestWebApp/BlazorServer/Properties/*
+#following file is confidential
+BlazorTestWebApp/BlazorServer/wwwroot/images/srijib.jpg
 BlazorTestWebApp/.vs/
 BlazorTestWebApp/EmployeeManagement.Models/bin/*
 BlazorTestWebApp/EmployeeManagement.Models/obj/*
 BlazorTestWebApp/PythonFlaskAPIForBlazorCln/obj/*
+BlazorTestWebApp/PythonFlaskAPIForBlazorCln/__pycache__/*
 BlazorTestWebApp/PythonFlaskAPIForBlazorCln/PythonFlaskAPIForBlazorCln/__pycache__/*

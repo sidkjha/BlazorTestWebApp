@@ -27,6 +27,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="PythonFlaskAPIForBlazorCln\configs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonFlaskAPIForBlazorCln\models.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="PythonFlaskAPIForBlazorCln\__init__.py" />
     <Compile Include="PythonFlaskAPIForBlazorCln\views.py" />
@@ -40,6 +46,7 @@
     <Folder Include="PythonFlaskAPIForBlazorCln\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PythonFlaskAPIForBlazorCln\settings.ini" />
     <Content Include="requirements.txt" />
     <Content Include="PythonFlaskAPIForBlazorCln\static\content\bootstrap.css" />
     <Content Include="PythonFlaskAPIForBlazorCln\static\content\bootstrap.min.css" />
@@ -63,10 +70,6 @@
     <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\respond.js" />
     <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\respond.min.js" />
     <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\_references.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\templates\about.html" />
-    <Content Include="PythonFlaskAPIForBlazorCln\templates\contact.html" />
-    <Content Include="PythonFlaskAPIForBlazorCln\templates\index.html" />
-    <Content Include="PythonFlaskAPIForBlazorCln\templates\layout.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
