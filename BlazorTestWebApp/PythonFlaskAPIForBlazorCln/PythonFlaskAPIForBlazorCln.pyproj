@@ -40,36 +40,11 @@
   <ItemGroup>
     <Folder Include="PythonFlaskAPIForBlazorCln\" />
     <Folder Include="PythonFlaskAPIForBlazorCln\static\" />
-    <Folder Include="PythonFlaskAPIForBlazorCln\static\content\" />
-    <Folder Include="PythonFlaskAPIForBlazorCln\static\fonts\" />
-    <Folder Include="PythonFlaskAPIForBlazorCln\static\scripts\" />
     <Folder Include="PythonFlaskAPIForBlazorCln\templates\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="PythonFlaskAPIForBlazorCln\settings.ini" />
     <Content Include="requirements.txt" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\content\bootstrap.css" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\content\bootstrap.min.css" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\content\site.css" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\bootstrap.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\bootstrap.min.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery-1.10.2.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery.validate.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery.validate.min.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\modernizr-2.6.2.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\respond.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\respond.min.js" />
-    <Content Include="PythonFlaskAPIForBlazorCln\static\scripts\_references.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
