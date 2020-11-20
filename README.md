@@ -1,5 +1,10 @@
 ## Creating a test client Web Application based on ASP.NET Core 3.1 Blazor Server which calls Restful Python Flask API
 
+Pre-requisites: Type the following in shell terminal (assuming Python3.7 and pip i.e. package manager is pre-installed in the system)-
+###### pip install -r BlazorTestWebApp/PythonFlaskAPIForBlazorCln/requirement.txt
+This downloads and install the python dependencies to execute the python scripts below. (must have admin privileges and internet connection)
+
+---------------------------------------------------------------------------------------
 Before executing BlazorServer project, make sure to run the flask server i.e Restful Python Flask API
 To do so, go inside git repo and open Python terminal and type the following (one-time):
 ###### from BlazorTestWebApp.PythonFlaskAPIForBlazorCln.PythonFlaskAPIForBlazorCln import db
@@ -7,7 +12,7 @@ To do so, go inside git repo and open Python terminal and type the following (on
 This creates the schemas written in models.py as per database configured stated in settings.ini
 
 ---------------------------------------------------------------------------------------
-Now, to run the flask server app (temporarily), type the following in shell terminal:
+Now, to run the flask server app (temporarily), type the following in **shell** terminal:
 ###### export FLASK_APP=BlazorTestWebApp/PythonFlaskAPIForBlazorCln/runserver.py
 ###### flask run --port=5555
 
