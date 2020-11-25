@@ -101,3 +101,7 @@ def department_by_id(dept_id):
 				return {"message": f"Department {data_by_id.DepartmentName} successfully deleted."}
 	except Exception as e:
 		return e
+
+@employee.route("/hello")
+def hello():
+     return 'Hello Srijib, Welcome to AWS!'
