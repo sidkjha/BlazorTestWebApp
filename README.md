@@ -17,8 +17,8 @@ Now, to run the flask server app (temporarily), type the following in **shell** 
 ###### flask run --port=5555
 
 Then check the endpoints by browsing in
-1. http://localhost:5555/api/employees
-2. http://localhost:5555/api/departments
+1. http://localhost:5555/api/employees (also can view the deployed one in aws ec2 instance by clicking: http://ec2-18-223-33-65.us-east-2.compute.amazonaws.com/api/employees) --> **few of the fields are not showing due to some difficulty**
+2. http://localhost:5555/api/departments (also can view the deployed one in aws ec2 instance by clicking: http://ec2-18-223-33-65.us-east-2.compute.amazonaws.com/api/departments)
 
 After this you can run the Blazor Server project from VS. Enjoy ! :)
 
