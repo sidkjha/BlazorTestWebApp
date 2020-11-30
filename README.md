@@ -22,4 +22,5 @@ Then check the endpoints by browsing in
 
 After this you can run the Blazor Server project from VS. Enjoy ! :)
 
+Dockerfile has been created which is used build images and run the container in docker host - an AWS ec2 linux instance
 ### stay tuned for updates
