@@ -1,5 +1,7 @@
 ## Creating a test client Web Application based on ASP.NET Core 3.1 Blazor Server which calls Restful Python Flask API
 
+WIP: Dockerfile has been created which is used build images and run the container in docker host - an AWS ec2 linux instance. Fine-tuning is going on.
+
 Pre-requisites: Type the following in shell terminal (assuming Python3.7 and pip i.e. package manager is pre-installed in the system)-
 ###### pip install -r BlazorTestWebApp/PythonFlaskAPIForBlazorCln/requirement.txt
 This downloads and install the python dependencies to execute the python scripts below. (must have admin privileges and internet connection)
@@ -22,5 +24,4 @@ Then check the endpoints by browsing in
 
 After this you can run the Blazor Server project from VS. Enjoy ! :)
 
-Dockerfile has been created which is used build images and run the container in docker host - an AWS ec2 linux instance
 ### stay tuned for updates
