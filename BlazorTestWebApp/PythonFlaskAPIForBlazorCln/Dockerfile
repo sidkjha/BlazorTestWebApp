@@ -11,6 +11,5 @@ WORKDIR /opt/docker/flaskappforblazorcln/
 
 RUN pip3 install -r requirements.txt
 
-CMD ["insertsampledata.py"]
-ENTRYPOINT ["python3"]
 CMD ["gunicorn3", "-b", "0.0.0.0:5001", "wsgi:app", "--workers=3"]
+CMD ["python3", "insertsampledata.py"]
