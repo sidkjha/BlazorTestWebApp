@@ -1,13 +1,14 @@
-FROM python:3.7.9
+FROM ubuntu:18.04
+MAINTAINER srijibb5991@gmail.com
 
-COPY . /opt/docker
+RUN apt-get update -y
+RUN apt-get install python3-pip -y
+RUN apt-get install gunicorn3 -y
 
-WORKDIR /opt/docker
+COPY . /opt/docker/flaskappforblazorcln/
 
-RUN pip install -r requirements.txt
+WORKDIR /opt/docker/flaskappforblazorcln/
 
-EXPOSE 5001
+RUN pip3 install -r requirements.txt
 
-ENV FLASK_APP /opt/docker/runserver.py
-
-CMD flask run --host=0.0.0.0 --port=5001 
+CMD ["gunicorn3", "-b", "0.0.0.0:5001", "wsgi:app", "--workers=3"]
