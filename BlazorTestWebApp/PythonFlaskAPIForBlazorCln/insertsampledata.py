@@ -1,6 +1,7 @@
 from PythonFlaskAPIForBlazorCln import db
 from PythonFlaskAPIForBlazorCln.models import Department, Employee, Gen
 from datetime import datetime
+db.create_all()
 dp1 = Department(DepartmentName='DEPT1')
 db.session.add(dp1)
 dp2 = Department(DepartmentName='DEPT2')
