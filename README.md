@@ -1,6 +1,6 @@
 ## Creating a test client Web Application based on ASP.NET Core 3.1 Blazor Server which calls Restful Python Flask API and deploying in AWS ec2 instance using Jenkins as continuous delivery tool
 
-WIP: Dockerfile has been created which is used build images and run the container in docker host - an AWS ec2 linux instance. Nginx will configured to make it accessible over internet.
+WIP: ansible will be used to deploy for continuous deployment and orchestrated using Kubernetes
 
 Pre-requisites: Type the following in shell terminal (assuming Python3.7 and pip i.e. package manager is pre-installed in the system)-
 ###### pip install -r BlazorTestWebApp/PythonFlaskAPIForBlazorCln/requirement.txt
@@ -42,9 +42,11 @@ Now, to insert sample data, go inside git repo and open Python terminal and type
 ###### db.session.commit()
 
 ---------------------------------------------------------------------------------------
-Now, to run the flask server app (temporarily), type the following in **shell** terminal:
+Now, to test run the flask server app (manually), type the following in **shell** terminal:
 ###### export FLASK_APP=BlazorTestWebApp/PythonFlaskAPIForBlazorCln/runserver.py
 ###### flask run --port=5555
+
+Dockerfile has been written to create images and container of this flask app and host it using nginx in Docker host - an AWS ec2 instance. Sample hosting of the application is done for reference.
 
 Then check the endpoints by browsing in
 1. http://localhost:5555/api/employees (also can view the deployed one in aws ec2 instance by clicking: http://ec2-18-223-187-60.us-east-2.compute.amazonaws.com/api/employees) --> **few of the fields are not showing due to some difficulty**
