@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  flask-for-blazor-app:
+    build: ./PythonFlaskAPIForBlazorCln
+    container_name: flask-for-blazor-app
+    network_mode: host
+
+  nginx:
+    build: ./nginxconf
+    container_name: nginx
+    environment:
+      - SERVER_NAME=18.223.187.60
+    restart: always
+    network_mode: host
