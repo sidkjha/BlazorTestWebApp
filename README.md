@@ -1,4 +1,4 @@
-## Creating a test client Web Application based on ASP.NET Core 3.1 Blazor Server which calls Restful Python Flask API
+## Creating a test client Web Application based on ASP.NET Core 3.1 Blazor Server which calls Restful Python Flask API and deploying in AWS ec2 instance using Jenkins as continuous delivery tool
 
 WIP: Dockerfile has been created which is used build images and run the container in docker host - an AWS ec2 linux instance. Nginx will configured to make it accessible over internet.
 
