@@ -13,6 +13,33 @@ To do so, go inside git repo and open Python terminal and type the following (on
 ###### db.create_all()
 This creates the schemas written in models.py as per database configured stated in settings.ini
 
+Now, to insert sample data, go inside git repo and open Python terminal and type the following:
+###### from BlazorTestWebApp.PythonFlaskAPIForBlazorCln.PythonFlaskAPIForBlazorCln import db
+###### from BlazorTestWebApp.PythonFlaskAPIForBlazorCln.PythonFlaskAPIForBlazorCln.models import Department, Employee, Gen
+###### from datetime import datetime
+###### dp1 = Department(DepartmentName='DEPT1')
+###### db.session.add(dp1)
+###### dp2 = Department(DepartmentName='DEPT2')
+###### db.session.add(dp2)
+###### dp3 = Department(DepartmentName='DEPT3')
+###### db.session.add(dp3)
+###### dp4 = Department(DepartmentName='DEPT4')
+###### db.session.add(dp4)
+###### dp5 = Department(DepartmentName='DEPT5')
+###### db.session.add(dp5)
+###### db.session.commit()
+###### emp1 = Employee(FirstName='Srijib', LastName='Bhattacharyya', Email='srijibb@xmail.com', Gender=Gen.Male, DepartmentId=1, DateOfBirth=datetime.strptime('08/07/81 09:08:23', '%d/%m/%y %H:%M:%S'), PhotoPath='images/srijib.jpg')
+###### db.session.add(emp1)
+###### emp2 = Employee(FirstName='John', LastName='Lenon', Email='johnl@jmail.com', Gender=Gen.Male, DepartmentId=2, DateOfBirth=datetime.strptime('13/11/82 19:08:21', '%d/%m/%y %H:%M:%S'), PhotoPath='images/john.png')
+###### db.session.add(emp2)
+###### emp3 = Employee(FirstName='Mary', LastName='Love', Email='maryl@xmail.com', Gender=Gen.Female, DepartmentId=1, DateOfBirth=datetime.strptime('15/10/90 20:07:33', '%d/%m/%y %H:%M:%S'), PhotoPath='images/mary.png')
+###### db.session.add(emp3)
+###### emp4 = Employee(FirstName='Sara', LastName='Gery', Email='saragl@xmail.com', Gender=Gen.Female, DepartmentId=1, DateOfBirth=datetime.strptime('08/02/80 20:07:33', '%d/%m/%y %H:%M:%S'), PhotoPath='images/sara.png')
+###### db.session.add(emp4)
+###### emp5 = Employee(FirstName='Sam', LastName='Bogo', Email='samb@cmail.com', Gender=Gen.Male, DepartmentId=4, DateOfBirth=datetime.strptime('23/12/87 22:07:55', '%d/%m/%y %H:%M:%S'), PhotoPath='images/sam.jpg')
+###### db.session.add(emp5)
+###### db.session.commit()
+
 ---------------------------------------------------------------------------------------
 Now, to run the flask server app (temporarily), type the following in **shell** terminal:
 ###### export FLASK_APP=BlazorTestWebApp/PythonFlaskAPIForBlazorCln/runserver.py
