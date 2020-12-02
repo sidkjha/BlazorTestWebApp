@@ -13,6 +13,7 @@ To do so, go inside git repo and open Python terminal and type the following (on
 ###### db.create_all()
 This creates the schemas written in models.py as per database configured stated in settings.ini
 
+---------------------------------------------------------------------------------------
 Now, to insert sample data, go inside git repo and open Python terminal and type the following:
 ###### from BlazorTestWebApp.PythonFlaskAPIForBlazorCln.PythonFlaskAPIForBlazorCln import db
 ###### from BlazorTestWebApp.PythonFlaskAPIForBlazorCln.PythonFlaskAPIForBlazorCln.models import Department, Employee, Gen
